@@ -9,4 +9,8 @@ export class Tab1Page {
 
   constructor() {}
 
+  pene(){
+    console.log('Val tonta');
+  }
+
 }
