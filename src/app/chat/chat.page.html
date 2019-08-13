@@ -7,79 +7,30 @@
 <ion-content>
 
     <ion-list>
+
       <ion-list-header>
         Recent Conversations
       </ion-list-header>
 
-      <ion-item>
+      <ion-item (click)="mdPage()">
         <ion-avatar slot="start">
         <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
         </ion-avatar>
         <ion-label>
           <h2>Noooma</h2>
-          <p>Soy tu dios/p>
+          <p>Soy tu dios<p>
         </ion-label>
       </ion-item>
 
+     </ion-list>
 
-    <ion-item>
-        <ion-avatar slot="start">
-        <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
-        </ion-avatar>
-        <ion-label>
-          <h2>Val</h2>
-          <p>A ver si me muero</p>
-        </ion-label>
-      </ion-item>
-
-
-    <ion-item>
-        <ion-avatar slot="start">
-        <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
-        </ion-avatar>
-        <ion-label>
-          <h2>Val</h2>
-          <p>A ver si me muero</p>
-        </ion-label>
-      </ion-item>
-
-
-    <ion-item>
-        <ion-avatar slot="start">
-        <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
-        </ion-avatar>
-        <ion-label>
-          <h2>Val</h2>
-          <p>A ver si me muero</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-          <ion-avatar slot="start">
-          <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
-          </ion-avatar>
-          <ion-label>
-            <h2>Val</h2>
-            <p>A ver si me muero</p>
-          </ion-label>
-        </ion-item>
-
-
-    <ion-item>
-        <ion-avatar slot="start">
-        <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y">
-        </ion-avatar>
-        <ion-label>
-          <h2>Val</h2>
-          <p>A ver si me muero</p>
-        </ion-label>
-      </ion-item>
-    </ion-list>
-
+  
     <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
       <ion-infinite-scroll-content
         loadingSpinner="bubbles"
         loadingText="Loading more data...">
       </ion-infinite-scroll-content>
     </ion-infinite-scroll>
+
+
   </ion-content>

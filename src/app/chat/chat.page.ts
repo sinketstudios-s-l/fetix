@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MdPage } from '../md/md.page';
+import { NavController } from '@ionic/angular';
+
+
 
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.page.html',
   styleUrls: ['./chat.page.scss'],
 })
-export class ChatPage implements OnInit {
+export class ChatPage {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) {
 
-  ngOnInit() {
   }
 
+  MdPage(){
+    this.navCtrl.push(MdPage);
+   }
+
 }
+
+
